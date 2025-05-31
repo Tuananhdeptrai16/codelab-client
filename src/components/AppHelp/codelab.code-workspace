@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../trello-codelab-server"
+		}
+	],
+	"settings": {}
+}

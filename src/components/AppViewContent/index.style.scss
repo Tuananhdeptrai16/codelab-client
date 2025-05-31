@@ -1,0 +1,18 @@
+.view-content {
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  .ant-typography {
+    margin-bottom: 0;
+  }
+}
+.button-complete {
+  margin-top: 15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.view-content-info {
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}

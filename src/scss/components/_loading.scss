@@ -1,0 +1,11 @@
+
+@use "../abstracts";
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__heading {
+    font-size: 1.6rem;
+    color: #eeee;
+  }
+}

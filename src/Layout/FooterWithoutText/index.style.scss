@@ -1,0 +1,23 @@
+// The code was written by programmer Truong Tuan Anh
+// Thanks for watching and sharing
+
+.footer-text {
+  border-top: 1px solid #d9d9d9;
+  width: 100%;
+  background: #292929;
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    & .logo {
+      justify-content: flex-start;
+    }
+  }
+  .footer__copyright--text {
+    text-align: center;
+    font-style: 1rem;
+    color: #fff !important;
+    font-weight: 500;
+    line-height: 148%;
+  }
+  
+}

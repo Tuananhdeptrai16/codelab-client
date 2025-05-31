@@ -1,0 +1,26 @@
+.course-content-wrap {
+    border-radius: 5px 0 0 5px;
+    overflow-y: auto;
+    height: calc(100vh - 85px);
+    overflow-y: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .ant-card-body {
+        padding: 10px;
+    }
+}
+.content {
+    padding: 10px;
+    
+}
+.code-component-wrap {
+    background: #282828;
+    height: calc(100vh - 84px);
+    border-radius: 0 5px 5px 0;
+    overflow-y: auto;
+
+}
+.wrap-code {
+    height: calc(100vh - 85px);
+    display: flex;
+    flex-direction: row;
+  }

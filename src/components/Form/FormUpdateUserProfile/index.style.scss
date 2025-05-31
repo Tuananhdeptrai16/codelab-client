@@ -1,0 +1,11 @@
+.user-profile {
+  margin-top: 20px;
+  margin: auto;
+  border-radius: 10px;
+  .ant-list-item {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px !important;
+   
+  }
+}

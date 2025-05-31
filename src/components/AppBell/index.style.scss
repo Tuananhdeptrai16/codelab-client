@@ -1,0 +1,17 @@
+.bell-home-page {
+    position: relative;
+}
+.total-stat-home-page {
+    position: absolute;
+    top: 12px;
+    right: -6px;
+    background: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+
+  .sidebar-wrap {
+    .ant-collapse {
+        border-radius: 0 !important;
+    }
+    .ant-collapse:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+    .ant-collapse:last-child {
+        border-radius: 5px 0 0 5px;
+    }
+  }

@@ -1,0 +1,150 @@
+@use "../abstracts";
+
+.checkout {
+  padding: 40px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  color: #333;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__left {
+    flex: 3;
+    width: 40%;
+
+    .checkout__logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .checkout__title {
+      margin-top: 16px;
+      font-size: 1.6rem ;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .checkout__description {
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .checkout__subtitle {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .checkout__benefits {
+      list-style: disc;
+      padding-left: 20px;
+      font-size: 16px;
+    }
+  }
+
+  &__right {
+    flex: 2;
+    width: 40%;
+
+    .checkout__box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .checkout__box-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .checkout__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .checkout__price {
+        text-align: right;
+
+        // &-original {
+        //   text-decoration: line-through;
+        //   color: #888;
+        //   display: block;
+        // }
+
+        &-sale {
+          color: #e53935;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .checkout__discount {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+    }
+
+    .checkout__view-codes {
+      display: inline-block;
+      font-size: 14px;
+      color: var(--main-color-highlight);
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+
+    .checkout__total {
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+}
+@include abstracts.breakpoint(md) {
+  .checkout {
+    padding: 20px;
+
+    &__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}
+
+:global(.ant-modal) {
+  @include abstracts.breakpoint(md) {
+    width: 100% !important;
+    max-width: 100% !important;
+    top: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+:global(.ant-modal-content) {
+  @include abstracts.breakpoint(md) {
+    height: 100vh;
+    border-radius: 0;
+  }
+}

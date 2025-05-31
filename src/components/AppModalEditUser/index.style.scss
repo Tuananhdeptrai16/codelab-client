@@ -1,0 +1,16 @@
+.modal-edit-user {
+  .edit-user-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    user-select: none;
+  }
+  .edit-user-sub-title {
+    font-size: 1rem;
+    color: var(--main-white-color-to-grey);
+    margin-bottom: 20px;
+  }
+  .edit-user-content {
+    margin-top: 15px;
+  }
+}

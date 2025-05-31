@@ -1,0 +1,27 @@
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 244px;
+  height: 100%;
+  &__button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: var(--background-color-main);
+  }
+  &__icon {
+    margin-left: 4px;
+    width: 24px;
+    height: 24px;
+    &:hover {
+      scale: 1.1;
+      color: var(--text-color-main-light-2);
+    }
+  }
+}
